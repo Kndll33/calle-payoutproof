@@ -30,10 +30,11 @@ Requires Node.js 20+ and, for CALL-E planning/live use, the official authenticat
 cd apps/typescript/payoutproof
 npm test
 npm run preview
+npm run judge
 node src/cli.js plan --input examples/fictional-platform.json
 ```
 
-`preview` masks the phone number and has no network side effect. `plan` creates a CALL-E call plan but does not dial. `start` can dial and is intentionally fail-closed:
+`preview` masks the phone number and has no network side effect. `judge` emits a deterministic, timed 90-second evaluator walkthrough from the same compiler, proves the live gate stops before invoking CALL-E, writes `artifacts/judge-walkthrough.txt`, and runs the regression suite. `plan` creates a CALL-E call plan but does not dial. `start` can dial and is intentionally fail-closed:
 
 ```bash
 PAYOUTPROOF_ENABLE_LIVE=1 node src/cli.js start   --input path/to/reviewed-packet.json   --approval-id approve-<generated-id>
@@ -48,6 +49,7 @@ Never put CALL-E tokens or execution confirmation data in logs, screenshots, iss
 ## Evaluate the project
 
 - [90-second judge quickstart](JUDGE_QUICKSTART.md)
+- [Generated judge walkthrough](artifacts/judge-walkthrough.txt)
 - [Demo production script and release gates](DEMO_SCRIPT.md)
 - [Devpost submission draft](SUBMISSION.md)
 - [Merged official CALL-E contribution](https://github.com/CALLE-AI/awesome-phone-call-agents/pull/292)

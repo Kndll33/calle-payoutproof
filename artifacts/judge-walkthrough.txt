@@ -1,0 +1,53 @@
+PAYOUTPROOF — 90-SECOND JUDGE WALKTHROUGH
+Reserved fictional input. Deterministic local evaluation. NO LIVE CALL WAS PLACED.
+
+[00:00–00:12] 1 / REAL-WORLD BLOCKER
+A public reward exists, but Example Rewards Team has not published complete payout logistics.
+Opportunity source: https://example.org/reward
+Official-contact source: https://example.org/contact
+PayoutProof prevents autonomous work from starting blindly.
+
+[00:12–00:27] 2 / ONE BOUNDED INQUIRY
+Destination shown only as +12****0147; the fixture uses the NANP-reserved 202-555-0147 range.
+Exactly 1 call; no scheduler or retry. Five public-policy questions:
+   1. payout_currency
+   2. payout_rail
+   3. payout_timing
+   4. identity_or_tax_steps
+   5. written_terms_location
+
+[00:27–00:43] 3 / DETERMINISTIC CUSTODY
+Packet hash: bade77a79b653473c3a01bd25edd65599ee5dcdbbdfdcd5427f38385f9747f7b
+Idempotency key: payoutproof-bade77a79b653473c3a01bd2
+Exact approval ID: approve-bade77a79b653473
+Expiry: 2099-01-01T00:00:00Z
+The same reviewed packet always produces the same custody identifiers.
+
+[00:43–00:56] 4 / FAIL-CLOSED LIVE GATE
+Unauthorized start result: live calls disabled; set PAYOUTPROOF_ENABLE_LIVE=1 only after exact authorization
+CALL-E runner invoked: false
+The app stopped before any provider process or network side effect.
+
+[00:56–01:12] 5 / PRIVACY-MINIMIZED OUTCOME
+A clearly labeled synthetic COMPLETED fixture is passed through the production normalizer.
+{
+  "schema": "payoutproof.result.v1",
+  "opportunity_id": "fictional-reward",
+  "packet_hash": "bade77a79b653473c3a01bd25edd65599ee5dcdbbdfdcd5427f38385f9747f7b",
+  "masked_phone": "+12****0147",
+  "status": "COMPLETED",
+  "terminal": true,
+  "written_source_required": true,
+  "contractual_verification": false
+}
+Only allowlisted fields remain: contractual_verification, masked_phone, opportunity_id, packet_hash, schema, status, terminal, written_source_required
+Raw transcript, summary, and full phone are not retained; verbal answers still require a written source.
+
+[01:12–01:30] 6 / RUBRIC AND NEXT PROOF
+Impact: prevents wasted work on opportunities with unusable payout terms.
+Idea: converts one narrow phone interaction into a permissioned evidence checkpoint.
+Implementation: strict validation, deterministic hashes, idempotency, fail-closed dual gate, normalized output.
+Experience: one chronological path from incomplete terms to a written-source-required verdict.
+Pending authentic proof: one separately authorized CALL-E run, sanitized evidence, natural demo, and Devpost receipt.
+
+END — npm test follows when invoked through `npm run judge`.

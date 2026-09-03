@@ -8,11 +8,10 @@ PayoutProof is a CALL-E TypeScript app for one narrow problem: public reward lis
 git clone https://github.com/Kndll33/calle-payoutproof.git
 cd calle-payoutproof
 npm ci
-npm test
-npm run preview
+npm run judge
 ```
 
-Expected result: 9 passing tests and a fictional, masked preview. The preview uses the NANP-reserved 202-555-0147 range and never starts a call.
+Expected local evidence: ten passing tests plus a six-panel, timed walkthrough and masked JSON evidence for the reserved fictional `202-555-0147` range. The walkthrough calls the production compiler and normalizer, proves an unauthorized start stops before the CALL-E runner, and makes no network request or call.
 
 ## CALL-E runtime boundary
 
