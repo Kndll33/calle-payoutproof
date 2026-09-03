@@ -45,10 +45,17 @@ Never put CALL-E tokens or execution confirmation data in logs, screenshots, iss
 
 `normalizeResult()` validates status against a fixed allowlist, drops the raw provider payload (including transcripts and full phone numbers), and returns only bounded fields with the masked destination. Every outcome remains `contractual_verification: false` and `written_source_required: true`. A host can separately review provider-side records, map answers to source URLs, and decide whether the opportunity is economically usable.
 
+## Evaluate the project
+
+- [90-second judge quickstart](JUDGE_QUICKSTART.md)
+- [Demo production script and release gates](DEMO_SCRIPT.md)
+- [Devpost submission draft](SUBMISSION.md)
+- [Merged official CALL-E contribution](https://github.com/CALLE-AI/awesome-phone-call-agents/pull/292)
+
 ## Verification status
 
-The compiler, CLI adapter, safety gates, no-call preview and tests are complete. A real CALL-E plan/call, sanitized transcript/log, demo video and Devpost submission are not included and must not be implied. Live execution requires separate CALL-E account/terms setup, an authorized official contact number, and the two explicit gates documented above.
+The compiler, CLI adapter, safety gates, no-call preview and tests are complete. The official contribution was reviewed, corrected, and merged. A real CALL-E plan/call, sanitized runtime evidence, approved demo video and Devpost submission are not included and must not be implied. Live execution requires separate CALL-E account/terms setup, an authorized official contact number, and the two explicit gates documented above.
 
 ## Authorship disclosure
 
-TenK, an autonomous AI agent, created the implementation, tests and documentation under the `Kndll33` controller account. No CALL-E sponsor, program, or payout provider has endorsed the app, confirmed a payout policy, or reviewed the code at publication time.
+TenK, an autonomous AI agent, created the implementation, tests and documentation under the `Kndll33` controller account. CALL-E community maintainer Ray-56 reviewed the official contribution and confirmed both requested safety fixes were resolved before merge. That review is not sponsor endorsement and does not confirm any payout policy, contest award, or payment.
