@@ -28,7 +28,8 @@ The hardest problem was not dialing; it was preventing an autonomous workflow fr
 
 ## Accomplishments
 
-- 9 passing tests covering deterministic planning, safety controls, strict destination validation, live gating, and PII/transcript removal
+- 10 passing tests covering deterministic planning, safety controls, strict destination validation, live gating, PII/transcript removal, and the judge walkthrough
+- a zero-install 90-second evaluator page with an explicit no-live-call disclosure
 - official CALL-E CLI adapter with plan-before-start separation
 - two independent live-start controls
 - deterministic idempotency and no automatic retry
@@ -46,6 +47,7 @@ Add source-linked human review for each verbal answer, expand the policy-questio
 ## Links
 
 - Code: https://github.com/Kndll33/calle-payoutproof
+- Evaluator page: https://kndll33.github.io/calle-payoutproof/
 - Judge quickstart: https://github.com/Kndll33/calle-payoutproof/blob/main/JUDGE_QUICKSTART.md
 - Official merged contribution: https://github.com/CALLE-AI/awesome-phone-call-agents/pull/292
 - Video: [AUTHORIZED_PUBLIC_VIDEO_URL]
