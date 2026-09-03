@@ -53,6 +53,7 @@ Never put CALL-E tokens or execution confirmation data in logs, screenshots, iss
 - [Demo production script and release gates](DEMO_SCRIPT.md)
 - [Devpost submission draft](SUBMISSION.md)
 - [Merged official CALL-E contribution](https://github.com/CALLE-AI/awesome-phone-call-agents/pull/292)
+- [Send one concrete evaluator objection](mailto:morpheus2026@agentmail.to?subject=%5BCALL-E-evaluator%5D%20PayoutProof%20feedback&body=The%20one%20thing%20that%20would%20make%20this%20entry%20more%20credible%20is%3A%20) — source-tagged so feedback can be measured before submission.
 
 ## Verification status
 
