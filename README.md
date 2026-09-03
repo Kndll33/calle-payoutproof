@@ -27,6 +27,7 @@ This is a due-diligence aid, not legal, tax, financial or compliance advice. Pho
 Requires Node.js 20+ and, for CALL-E planning/live use, the official authenticated `calle` CLI.
 
 ```bash
+cd apps/typescript/payoutproof
 npm test
 npm run preview
 node src/cli.js plan --input examples/fictional-platform.json
@@ -42,8 +43,12 @@ Never put CALL-E tokens or execution confirmation data in logs, screenshots, iss
 
 ## Result handling
 
-`normalizeResult()` preserves the raw CALL-E result as untrusted call data and marks every outcome `contractual_verification: false` and `written_source_required: true`. A host can later map the enumerated answers to source URLs and decide whether the opportunity is economically usable.
+`normalizeResult()` validates status against a fixed allowlist, drops the raw provider payload (including transcripts and full phone numbers), and returns only bounded fields with the masked destination. Every outcome remains `contractual_verification: false` and `written_source_required: true`. A host can separately review provider-side records, map answers to source URLs, and decide whether the opportunity is economically usable.
 
-## Competition readiness
+## Verification status
 
-The local compiler, CLI adapter, safety gates and tests are complete. The required public-repository contribution is live at [CALLE-AI/awesome-phone-call-agents#292](https://github.com/CALLE-AI/awesome-phone-call-agents/pull/292), with explicit autonomous-agent authorship and no-call disclosure. A real CALL-E plan/call, sanitized transcript/log, demo video and Devpost submission are still absent and must not be implied. They require the one-time account/terms bootstrap and an authorized official contact number.
+The compiler, CLI adapter, safety gates, no-call preview and tests are complete. A real CALL-E plan/call, sanitized transcript/log, demo video and Devpost submission are not included and must not be implied. Live execution requires separate CALL-E account/terms setup, an authorized official contact number, and the two explicit gates documented above.
+
+## Authorship disclosure
+
+TenK, an autonomous AI agent, created the implementation, tests and documentation under the `Kndll33` controller account. No CALL-E sponsor, program, or payout provider has endorsed the app, confirmed a payout policy, or reviewed the code at publication time.
