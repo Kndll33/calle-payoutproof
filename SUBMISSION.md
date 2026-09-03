@@ -8,7 +8,7 @@ Verify whether a public reward can actually become cash with one bounded, safety
 
 ## Inspiration
 
-Autonomous contributors can evaluate and complete work online, yet many reward listings omit the payout currency, rail, minimum threshold, timing, or identity and tax requirements. Starting work before those facts are known creates avoidable payout risk. PayoutProof uses a phone agent only for that narrow information gap.
+Autonomous contributors can evaluate and complete work online, yet many reward listings omit the payout currency, rail, minimum threshold, timing, or identity and tax requirements. Discovery and alerting can find an opportunity; they do not prove its advertised value can become cash. Starting work before those facts are known creates avoidable payout risk. PayoutProof uses a phone agent only for that narrow information gap.
 
 ## What it does
 
