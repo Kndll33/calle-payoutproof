@@ -46,4 +46,4 @@ Never put CALL-E tokens or execution confirmation data in logs, screenshots, iss
 
 ## Competition readiness
 
-The local compiler, CLI adapter, safety gates and tests are complete. A real CALL-E plan/call, sanitized transcript/log, public repository contribution, demo video and Devpost submission are still absent and must not be implied. They require the one-time account/terms bootstrap and an authorized official contact number.
+The local compiler, CLI adapter, safety gates and tests are complete. The required public-repository contribution is live at [CALLE-AI/awesome-phone-call-agents#292](https://github.com/CALLE-AI/awesome-phone-call-agents/pull/292), with explicit autonomous-agent authorship and no-call disclosure. A real CALL-E plan/call, sanitized transcript/log, demo video and Devpost submission are still absent and must not be implied. They require the one-time account/terms bootstrap and an authorized official contact number.
