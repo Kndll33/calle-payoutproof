@@ -17,8 +17,9 @@
     .problem{border-top:5px solid var(--amber)}.gate{border-top:5px solid var(--red)}.result{border-top:5px solid var(--teal)}.rubric{border-top:5px solid var(--blue)}
     code,pre{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}code{font-size:.88em;background:#eef1f3;border-radius:5px;padding:.12rem .3rem}pre{margin:14px 0 0;padding:16px;overflow:auto;background:#111a20;color:#e9f3f1;border-radius:12px;font-size:.8rem;line-height:1.45}
     .questions{padding-left:1.15rem;color:var(--muted)}.questions li{margin:.22rem 0}.proofline{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.proof{background:#fff;border:1px solid var(--line);border-radius:13px;padding:16px}.proof strong{display:block;color:var(--teal);margin-bottom:4px}.proof span{color:var(--muted);font-size:.9rem}
+    .rubric-map{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:28px 0 10px}.criterion{border:1px solid var(--line);border-radius:13px;padding:14px;background:white;box-shadow:0 7px 20px rgba(20,24,36,.04)}.criterion strong{display:block;color:var(--blue);font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin-bottom:5px}.criterion span{font-size:.9rem;line-height:1.35}.criterion.pending{border-color:#efc6c7;background:var(--red2)}.criterion.pending strong{color:var(--red)}
     .callout{margin:38px 0 0;border:1px solid #efc6c7;background:var(--red2);border-radius:15px;padding:20px}.callout h3{margin:0 0 4px;color:var(--red)}.callout p{margin:.25rem 0;color:#6b3a3d}.foot{border-top:1px solid var(--line);padding:28px 0 40px;color:var(--muted);font-size:.9rem}.foot .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
-    @media(max-width:760px){.hero{padding-top:52px}.panel{grid-column:span 12}.proofline{grid-template-columns:1fr 1fr}.section-title{display:block}.section-title p{margin-top:5px}}@media(max-width:460px){.proofline{grid-template-columns:1fr}}
+    @media(max-width:760px){.hero{padding-top:52px}.rubric-map{grid-template-columns:1fr 1fr}.panel{grid-column:span 12}.proofline{grid-template-columns:1fr 1fr}.section-title{display:block}.section-title p{margin-top:5px}}@media(max-width:460px){.rubric-map,.proofline{grid-template-columns:1fr}}
   </style>
 </head>
 <body>
@@ -38,6 +39,12 @@
   </div>
 </header>
 <main class="wrap">
+  <section class="rubric-map" aria-label="CALL-E judging criteria evidence map">
+    <article class="criterion pending"><strong>Technical execution · partial</strong><span>CALL-E adapter, merged official contribution, and 10/10 tests are public. The required authentic runtime call is the one named gap.</span></article>
+    <article class="criterion"><strong>Impact &amp; UX · evidenced</strong><span>One 90-second path shows whether a published payout route can become cash before work begins.</span></article>
+    <article class="criterion"><strong>Creativity &amp; problem-solving · evidenced</strong><span>Not another reward alert: a permissioned phone check resolves post-discovery payout ambiguity.</span></article>
+    <article class="criterion"><strong>Reusability &amp; developer experience · evidenced</strong><span>Deterministic packet, one-command judge route, strict output boundary, and merged ecosystem listing.</span></article>
+  </section>
   <div class="section-title"><h2>One chronological proof</h2><p>Every value below comes from the deterministic fictional fixture.</p></div>
   <section class="timeline" aria-label="PayoutProof evaluator timeline">
     <article class="panel problem"><div class="time">00:00–00:12</div><h3>1. A concrete blocker</h3><p>A public reward exists, but its currency, payout rail, timing, tax/identity categories, and current written terms are incomplete. An autonomous worker should not start blindly.</p><p><strong>Fixture sources:</strong> <code>example.org/reward</code> · <code>example.org/contact</code> — reserved example-domain placeholders</p></article>
